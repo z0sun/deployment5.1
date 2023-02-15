@@ -14,4 +14,4 @@ Demonstrate your ability to create a resilient infrastructure for your applicati
 
 
 ## Deployment Document Link:
--  Link to instructions: https://github.com/kura-labs-org/kuralabs_deployment_2/blob/main/Deployment-2_Assignment.pdf
+-  Link to instructions: https://github.com/kura-labs-org/c4_deployment-5/blob/main/CH4%20Deployment-5_Assignment.pdf

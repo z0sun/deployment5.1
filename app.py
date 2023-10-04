@@ -22,7 +22,6 @@ ckeditor = CKEditor(app)
 # Old SQLite DB
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://username:password@database.ctq9p5c.us-west-1.rds.amazonaws.com:5432/db'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://admin:password1@mydata.ctqgxnjn9p5c.us-east-1.rds.amazonaws.com:5432/bankingdb
 # New MySQL DB
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://username:password@localhost/db_name'
 # Secret Key!

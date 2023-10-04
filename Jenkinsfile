@@ -4,7 +4,7 @@ stages {
 stage ('Build') {
 steps {
 sh '''#!/bin/bash
-python3 -m venv test3
+python3.8 -m venv test3
 source test3/bin/activate
 pip install pip --upgrade
 pip install -r requirements.txt
@@ -43,7 +43,7 @@ sh '''#!/bin/bash
 pip install -r requirements.txt
 pip install gunicorn
 export test1=joetyi77
-python3 -m gunicorn -w 4 application:app -b 0.0.0.0 --daemon
+python3.8 -m gunicorn -w 4 application:app -b 0.0.0.0 --daemon
 '''
 }
 }

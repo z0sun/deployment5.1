@@ -1,17 +1,26 @@
+<p align="center">
 <img src="https://github.com/kura-labs-org/kuralabs_deployment_1/blob/main/Kuralogo.png">
-<h1 align="center">C4_deployment_5<h1> 
+</p>
+<h1 align="center">C4_deployment-5<h1> 
 
-Demonstrate your ability to create a resilient infrastructure for your application, by creating multiple VPCs (Virtual private cloud), ALB (Application Load Balancer), and a database to the application.
+Demonstrate your ability to deploy an application to an EC2 instance.
 
-- Create a separate GitHub repository for your application pipeline
+- Create a separate GitHub repository for this application 
 
-- Be sure to follow the deployment instructions in the deployment repository link  
+- Download the files from this repository and upload them to your newly created repository 
 
-- After you successfully deployed your application to your resilient infrastructure, document your process, any issues you ran into while setting up the deployment, and what you did to fix it.    
+- Be sure to follow the deployment instructions from this repository  
 
-- Lastly, save your documentation and diagram into your  GitHub repository. Submit your repository link to the LMS  
+- Document your progress in a .md file in your repository. Also, document any issues you may run into and what you did to fix them.
 
+- Make sure your documentation includes these sections:
+  - Purpose
+  - Issues
+  - Steps
+  - System Diagram
+  - Optimization (How would make this deployment more efficient, if you utilize ChatGPT make sure to explain what your prompt was.)
 
+- Lastly, save your documentation and diagram into your repository. Submit your repository link to the LMS
 
-## Deployment Document Link:
--  Link to instructions: https://github.com/kura-labs-org/c4_deployment-5/blob/main/CH4%20Deployment-5_Assignment.pdf
+## Deployment instructions Link:
+-  Link to instructions: https://github.com/kura-labs-org/c4_deployment-4/blob/main/Deployment-instructions.md

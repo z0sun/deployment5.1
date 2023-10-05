@@ -4,7 +4,6 @@ pipeline {
     stage ('Build') {
       steps {
         sh '''#!/bin/bash
-        scp Pkill.sh ubuntu@54.224.42.177:/home/ubuntu/c4_deployment-5
         py setup2.py
         '''
      }

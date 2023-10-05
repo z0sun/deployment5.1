@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">C4_deployment-5<h1> 
 
-Demonstrate your ability to deploy an application to an EC2 instance.
+Demonstrate your ability to deploy a NEW flask application to an EC2 instance.
 
 - Create a separate GitHub repository for this application 
 

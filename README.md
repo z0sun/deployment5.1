@@ -23,4 +23,4 @@ Demonstrate your ability to deploy an application to an EC2 instance.
 - Lastly, save your documentation and diagram into your repository. Submit your repository link to the LMS
 
 ## Deployment instructions Link:
--  Link to instructions: https://github.com/kura-labs-org/c4_deployment-4/blob/main/Deployment-instructions.md
+-  Link to instructions: https://github.com/kura-labs-org/c4_deployment-5/blob/main/Deployment-instructions.md

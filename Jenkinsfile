@@ -29,6 +29,7 @@ stage ('Deploy') {
 steps {
 sh '''#!/bin/bash
 pip install paramiko
+pip install rich
 python setup.py
 '''
 }

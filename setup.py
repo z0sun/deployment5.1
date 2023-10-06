@@ -4,7 +4,6 @@ from rich import print, pretty, inspect
 client = SSHClient()
 
 client.load_system_host_keys()
-client.load_host_keys('/home/ubuntu/.ssh/known_hosts')
 
 client.set_missing_host_key_policy(AutoAddPolicy())
 

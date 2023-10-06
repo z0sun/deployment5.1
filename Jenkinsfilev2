@@ -14,7 +14,7 @@ pipeline {
      source test/bin/activate
      python setup3.py
     '''
-}
-}
+      }
+    }
   }
- }
+}

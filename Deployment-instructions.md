@@ -33,10 +33,6 @@
 8. Check the application on the second instance!!
 4. Now make a change to the HTML and then run the Jenkinsfilev2 
 5. How did you decide to run the Jenkinsfilev2?
-6. What kind of script would you create for this deployment?
+6. What kind of automated script would you create for this deployment?
 7. Why did you place both instances in the same subnet? Or why did you place one instance in one subnet and the other in another subnet?
-8. Create your multi-branch and run it
-9. How is the server performing?
-10. Can the server handle everything installed on it? if yes, how would a T.2 micro handle in this deployment? 
-11. What happens to the CPU when you run another build?
-12. Configure an alert or figure out how to configure email notifications on Jenkins
+

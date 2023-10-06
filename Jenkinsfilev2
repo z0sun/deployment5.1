@@ -1,10 +1,10 @@
 pipeline {
   agent any
    stages {
-    stage ('Build') {
+    stage ('Clean') {
       steps {
         sh '''#!/bin/bash
-        py setup2.py
+        python setup2.py
         '''
      }
    }

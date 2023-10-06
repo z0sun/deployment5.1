@@ -20,7 +20,7 @@
 ```
 4. On the second instance, install the following:
 ```
-- Install the following: {  sudo apt install -y software-properties-common, sudo add-apt-repository -y ppa:deadsnakes/ppa, sudo apt install -y python3.7, sudo apt install -y python3.7-venv}
+- Install the following: {sudo apt install -y software-properties-common, sudo add-apt-repository -y ppa:deadsnakes/ppa, sudo apt install -y python3.7, sudo apt install -y python3.7-venv}
 ```
 6. Now modify the scripts listed below via Git, to the public IP address of your second instance (remember to clone, branch, make updates, and merge back into main):
 ```

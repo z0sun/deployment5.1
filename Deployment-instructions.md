@@ -18,21 +18,21 @@
 - Test the ssh connection 
 - Now install the following: {sudo apt install -y software-properties-common, sudo add-apt-repository -y ppa:deadsnakes/ppa, sudo apt install -y python3.7,  sudo apt install -y python3.7-venv,}
 ```
-4. On the second instance, install the following:
+3. On the second instance, install the following:
 ```
 - Install the following: {sudo apt install -y software-properties-common, sudo add-apt-repository -y ppa:deadsnakes/ppa, sudo apt install -y python3.7, sudo apt install -y python3.7-venv}
 ```
-6. Now modify the IP address in the scripts listed below via Git, to the public IP address of your second instance (remember to clone, branch, make updates, and merge back into main):
+4. Now modify the IP address in the scripts listed below via Git, to the public IP address of your second instance (remember to clone, branch, make updates, and merge back into main):
 ```
 - setup.py: client.connect(**Your Public IP**, username="ubuntu")
 - setup2.py: client.connect(**Your Public IP**, username="ubuntu")
 - setup3.py: client.connect(**Your Public IP**, username="ubuntu")
 - Jenkinsfilev2: scp Pkill.sh ubuntu@**Your Public IP**:/home/ubuntu/c4_deployment-5
 ```
-7. Create a Jenkins multibranch pipeline and run the Jenkinsfilev1 
-8. Check the application on the second instance!!
-4. Now make a change to the HTML and then run the Jenkinsfilev2 
-5. How did you decide to run the Jenkinsfilev2?
-6. What kind of automated script would you create for this deployment?
-7. Why did you place both instances in the same subnet? Or why did you place one instance in one subnet and the other in another subnet?
+5. Create a Jenkins multibranch pipeline and run the Jenkinsfilev1 
+6. Check the application on the second instance!!
+7. Now make a change to the HTML and then run the Jenkinsfilev2 
+8. How did you decide to run the Jenkinsfilev2?
+9. What kind of automated script would you create for this deployment?
+10. Why did you place both instances in the same subnet? Or why did you place one instance in one subnet and the other in another subnet?
 

@@ -11,7 +11,7 @@ client.connect("54.224.191.185", username="ubuntu")
 
 stdin, stdout, stderr = client.exec_command('''
                                             cd c4_deployment-5
-                                            
+                                            python -m gunicorn app:app -b 0.0.0.0 &
                                             ''')
 
 #print(stdout.read().decode("utf-8"))

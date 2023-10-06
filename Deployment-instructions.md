@@ -22,7 +22,7 @@
 ```
 - Install the following: {sudo apt install -y software-properties-common, sudo add-apt-repository -y ppa:deadsnakes/ppa, sudo apt install -y python3.7, sudo apt install -y python3.7-venv}
 ```
-6. Now modify the scripts listed below via Git, to the public IP address of your second instance (remember to clone, branch, make updates, and merge back into main):
+6. Now modify the IP address in the scripts listed below via Git, to the public IP address of your second instance (remember to clone, branch, make updates, and merge back into main):
 ```
 - setup.py: client.connect(**Your Public IP**, username="ubuntu")
 - setup2.py: client.connect(**Your Public IP**, username="ubuntu")

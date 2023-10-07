@@ -15,7 +15,7 @@
 ```
 - Install Jenkins
 - Install the following plugin: “Pipeline Keep Running Step”
-- Set up Jenkins agent {Follow the scribe link after you've created a ssh key on the second instance}
+- Set up Jenkins agent {Follow the scribe link after you've created an ssh key on the second instance}
 ```
 3. On the second instance, install the following:
 ```

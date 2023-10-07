@@ -9,30 +9,28 @@
     - 2 Public Subnets
     - 2 EC2's
     - 1 Route Table
-    - Security Group Ports: 8080, 8000, 22     
+    - Security Group Ports: 8080, 8000, 22
+    - Only 1 instance per subnet    
 2. For the first instance follow the below instructions:
 ```
 - Install Jenkins
-- Create a public and private key on this instance with ssh-keygen
-- Copy the public key contents and paste it into the second instance authorized_keys
-- Test the ssh connection 
-- Now install the following: {sudo apt install -y software-properties-common, sudo add-apt-repository -y ppa:deadsnakes/ppa, sudo apt install -y python3.7,  sudo apt install -y python3.7-venv,}
+- Install the following plugin: “Pipeline Keep Running Step”
+- Set up Jenkins agent {Follow the scribe link after you've created a ssh key on the second instance}
 ```
 3. On the second instance, install the following:
 ```
-- Install the following: {sudo apt install -y software-properties-common, sudo add-apt-repository -y ppa:deadsnakes/ppa, sudo apt install -y python3.7, sudo apt install -y python3.7-venv}
+- Create a public and private key on this instance with ssh-keygen
+- Copy the contents of the private key and save it somewhere
+- Install the following: {default-jre, nginx, software-properties-common, sudo add-apt-repository -y ppa:deadsnakes/ppa, python3.7, python3.7-venv}
+- Set up nginx (Review Repo 4 or your documentation for set up)
 ```
-4. Now modify the IP address in the scripts listed below via Git, to the public IP address of your second instance (remember to clone, branch, make updates, and merge back into main):
-```
-- setup.py: client.connect(**Your Public IP**, username="ubuntu")
-- setup2.py: client.connect(**Your Public IP**, username="ubuntu")
-- setup3.py: client.connect(**Your Public IP**, username="ubuntu")
-- Jenkinsfilev2: scp Pkill.sh ubuntu@**Your Public IP**:/home/ubuntu/c4_deployment-5
-```
-5. Create a Jenkins multibranch pipeline and run the Jenkinsfilev1 
+4. Now follow the Jenkins agent scribe: link
+5. Create a Jenkins multibranch pipeline and run the Jenkinsfile 
 6. Check the application on the second instance!!
-7. Now make a change to the HTML and then run the Jenkinsfilev2 
-8. How did you decide to run the Jenkinsfilev2?
-9. What kind of automated script would you create for this deployment?
-10. Why did you place both instances in the same subnet? Or why did you place one instance in one subnet and the other in another subnet?
+7. Now make a change to the HTML
+8. Set up email notifications in Jenkins and a monitoring agent
+9. Redeploy the application 
+10. How is the server performing?
+11. Would you need to run the agent build and application on another server?
+12. Which instance should be in a private subnet? Should both instances be in a private subnet? Why?
 

@@ -23,5 +23,4 @@ Demonstrate your ability to deploy a Banking Flask application to an EC2 instanc
 - Lastly, save your documentation and diagram into your repository. Submit your repository link to the LMS
 
 ## Deployment instructions Link:
--  Link to instructions: https://github.com/kura-labs-org/c4_deployment-5/blob/main/Deployment-instructions.md
-hello
+-  https://github.com/kura-labs-org/c4_deployment-5.1/blob/main/Deployment-instructions.md

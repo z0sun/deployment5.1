@@ -30,7 +30,7 @@
 7. Now make a change to the HTML
 8. Set up email notifications in Jenkins and a monitoring agent
 9. Redeploy the application 
-10. How is the server performing?
-11. Would you need to run the agent build and application on another server?
+10. How is the instance performing?
+11. Would you need to run the agent build process and the application on different instances?
 12. Which instance should be in a private subnet? Should both instances be in a private subnet? Why?
 

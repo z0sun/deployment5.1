@@ -23,16 +23,11 @@
 - Create a public and private key on this instance with ssh-keygen
 - Copy the contents of the private key and save it somewhere
 - Install the following: {default-jre, nginx, software-properties-common, sudo add-apt-repository -y ppa:deadsnakes/ppa, python3.7, python3.7-venv}
-- Set up nginx (Review Repo 4 or your documentation for set up)
+- Set up nginx (Review Repo 4 or your documentation on Nginx setup)
 ```
 4. Now follow the Jenkins agent scribe: link
 5. Create a Jenkins multibranch pipeline and run the Jenkinsfile (Change the agent name in the Jenkinsfile to deploy to the second instance) 
 6. Check the application!!
-7. Create an Application Load Balancer and connected it to your application instances: link
-8. Now make a change to the HTML
-9. Set up email notifications in Jenkins and a monitoring agent
-10. Redeploy the application 
-11. How is the instance performing?
-12. Would you need to run the agent build process and the application on different instances?
-13. Which instance should be in a private subnet? Should both instances be in a private subnet? Why?
+7. What should be added to the infrastructure to make it more available?
+8. Which instance should be in a private subnet? Should both instances be in a private subnet? Why?
 

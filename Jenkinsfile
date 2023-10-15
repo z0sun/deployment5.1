@@ -25,13 +25,36 @@ junit 'test-reports/results.xml'
 }
 }
 }
-stage ('Deploy') {
+stage ('Clean') {
+agent {label 'awsDeploy'}
 steps {
 sh '''#!/bin/bash
-pip install paramiko
-pip install rich
-python setup.py
+if [[ $(ps aux | grep -i "gunicorn" | tr -s " " | head -n 1 | cut -d " " -f 2) != 0 ]]
+then
+ps aux | grep -i "gunicorn" | tr -s " " | head -n 1 | cut -d " " -f 2 > pid.txt
+kill $(cat pid.txt)
+exit 0
+fi
 '''
+}
+}
+stage ('Deploy') {
+agent {label 'awsDeploy'}
+steps {
+keepRunning {
+sh '''#!/bin/bash
+python3.7 -m venv test
+source test/bin/activate
+pip install pip --upgrade
+pip install -r requirements.txt
+pip install gunicorn
+python database.py
+sleep 1
+python load_data.py
+sleep 1 
+python -m gunicorn app:app -b 0.0.0.0 -D && echo "Done"
+'''
+}
 }
 }
 stage ('Reminder') {

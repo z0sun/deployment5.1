@@ -9,7 +9,7 @@
     - 2 Public Subnets
     - 3 EC2's
     - 1 Route Table
-    - Security Group Ports: 8080, 5000, 22
+    - Security Group Ports: 8080, 8000, 22
     - Only 1 application instance per subnet 
 2. For the Jenkins instance follow the below instructions:
 ```
@@ -21,8 +21,7 @@
 ```
 - Create a public and private key on this instance with ssh-keygen
 - Copy the contents of the private key and save it somewhere
-- Install the following: {default-jre, nginx, software-properties-common, sudo add-apt-repository -y ppa:deadsnakes/ppa, python3.7, python3.7-venv}
-- Set up nginx (Review Repo 4 or your documentation on Nginx setup)
+- Install the following: {default-jre, software-properties-common, sudo add-apt-repository -y ppa:deadsnakes/ppa, python3.7, python3.7-venv}
 ```
 4. Jenkins agent scribe: link
 5. Create a Jenkins multibranch pipeline and run the Jenkinsfile (Change the agent name in the Jenkinsfile to deploy to the second instance) 

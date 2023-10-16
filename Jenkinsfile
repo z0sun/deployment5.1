@@ -14,7 +14,7 @@ pip install -r requirements.txt
 stage ('test') {
 steps {
 sh '''#!/bin/bash
-source test1/bin/activate
+source test/bin/activate
 pip install pytest
 py.test --verbose --junit-xml test-reports/results.xml
 '''

@@ -12,9 +12,9 @@
     - 1 Route Table
     - Security Group Ports: 8080, 8000, 22
     - Only 1 application instance per subnet 
-3. For the Jenkins instance follow the below instructions:
+3. For the Jenkins instance follow the instructions below:
 ```
-- Install Jenkins the following: {software-properties-common, sudo add-apt-repository -y ppa:deadsnakes/ppa, python3.7, python3.7-venv}
+- software-properties-common, sudo add-apt-repository -y ppa:deadsnakes/ppa, python3.7, python3.7-venv}
 - Install the following plugin: “Pipeline Keep Running Step”
 - Set up Jenkins agent {Follow the scribe link after you've created an SSH key on the second and third instance}
 ```

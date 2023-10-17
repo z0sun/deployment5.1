@@ -8,10 +8,9 @@
     - 1 VPC
     - 2 AZ's
     - 2 Public Subnets
-    - 3 EC2's
+    - 3 EC2s (Figure out which subnets should have which instance (Jenkins Instance vs Application Instances). The application instances should be in their own subnets) 
     - 1 Route Table
     - Security Group Ports: 8080, 8000, 22
-    - Only 1 application instance per subnet 
 3. For the Jenkins instance follow the instructions below:
 ```
 - software-properties-common, sudo add-apt-repository -y ppa:deadsnakes/ppa, python3.7, python3.7-venv}

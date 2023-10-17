@@ -4,7 +4,8 @@
 
 ## Deployment Instructions:
 1. When you create the new instances, first create a new key pair in AWS, save the .pem file on your computer, and attach the new private key to all your instances
-2. Create a VPC with Terraform and the VPC **MUST** have only the components listed below:
+2. Recreate a VPC with Terraform **All infrastructure you create below must follow a naming convention including the name of the Deployment e.g. D5.1_VPC, D5.1_Jenkins_EC2, etc.**
+The VPC **MUST** have only the components listed below:
     - 1 VPC
     - 2 AZ's
     - 2 Public Subnets
@@ -24,7 +25,9 @@
 6. Create a Jenkins multibranch pipeline and run the Jenkinsfile 
 7. Check the application!!
 8. Now figure out how to deploy the application on the third instance
-9. What should be added to the infrastructure to make it more available?
-10. What is the purpose of a Jenkins agent? 
+9. What should be added to the infrastructure to make the application more available to users?
+10. What is the purpose of a Jenkins agent?
+
+Make sure that your documentation speaks to the questions asked above as well as talk to the "why" this specific infrastructure was made for this deployment.  
 
 

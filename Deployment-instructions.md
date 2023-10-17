@@ -8,7 +8,7 @@
     - 1 VPC
     - 2 AZ's
     - 2 Public Subnets
-    - 3 EC2s (The application instances should be in their own subnets) 
+    - 3 EC2s (The application instances should be in their own subnet) 
     - 1 Route Table
     - Security Group Ports: 8080, 8000, 22
 3. For the Jenkins instance follow the instructions below:

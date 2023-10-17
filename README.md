@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">C4_deployment-5.1<h1> 
 
-Demonstrate your ability to deploy a Banking Flask application to an EC2 instance using a Jenkins agent.
+Demonstrate your ability to deploy a Banking Flask application to EC2 instances using a Jenkins agent.
 
 - Create a separate GitHub repository for this application 
 
@@ -18,7 +18,8 @@ Demonstrate your ability to deploy a Banking Flask application to an EC2 instanc
   - Issues
   - Steps
   - System Diagram
-  - Optimization (How would make this deployment more efficient, if you utilize ChatGPT make sure to explain what your prompt was.)
+  - Optimization (How would make this deployment more efficient)
+*** If you utilize ChatGPT at any step of your pipeline, make sure to explain where and what your prompt was. ***
 
 - Lastly, save your documentation and diagram into your repository. Submit your repository link to the LMS
 

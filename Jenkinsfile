@@ -40,7 +40,11 @@ fi
 }
 stage ('Deploy') {
 <<<<<<< HEAD
+<<<<<<< HEAD
 agent {label 'awsDeploy || awsDeploy2'}
+=======
+agent {label 'awsDeploy || awsDeploy2}
+>>>>>>> second
 =======
 agent {label 'awsDeploy || awsDeploy2}
 >>>>>>> second

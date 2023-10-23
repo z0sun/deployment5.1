@@ -60,7 +60,7 @@ During this step edits to the Jenkins file were split between two branches and i
     Click save & check in Jenkins UI for a successful installation by clicking "Log"`
 [Jenkins Agents][https://github.com/z0sun/deployment5.1/blob/main/Nodes.png]
 
-Both Applications deployed on both instances successfully. [Jenkins Builds][https://github.com/z0sun/deployment5.1/blob/main/Successful%20Main.png,https://github.com/z0sun/deployment5.1/blob/main/Second%20Build%20Success%20.png]
+Both Applications deployed on both instances successfully. [Jenkins Builds][https://github.com/z0sun/deployment5.1/blob/main/Successful%20Main.png, https://github.com/z0sun/deployment5.1/blob/main/Second%20Build%20Success%20.png]
 
 
 ---

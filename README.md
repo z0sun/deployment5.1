@@ -8,7 +8,7 @@ The purpose of this deployment is to deploy a Banking Flask application to EC2 i
 ---
 ## Steps
 
-1. Using the Terraform main.tf file the aws infrastructure containing:
+1. Using the Terraform [main.tf][https://github.com/z0sun/deployment5.1/blob/main/main.tf] file build the the aws infrastructure containing:
 * VPC
 * AZ's
 * Public Subnets

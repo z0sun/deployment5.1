@@ -8,13 +8,16 @@ The purpose of this deployment is to deploy a Banking Flask application to EC2 i
 ---
 ## Steps
 
-1. Using the Terraform [main.tf][https://github.com/z0sun/deployment5.1/blob/main/main.tf] file build the the aws infrastructure containing:
-* VPC
-* AZ's
-* Public Subnets
-* EC2s (The application instances should be in their own subnet)
-* Route Table
-* Security Group Ports: 8080, 8000, 22
+1. Using the Terraform [main.tf][https://github.com/z0sun/deployment5.1/blob/main/main.tf] file build the aws infrastructure containing:
+
+`* 1 VPC
+* 2 AZ's
+* 2 Public Subnets
+* 3 EC2s (The application instances should be in their own subnet)
+* 1 Route Table
+* Security Group Ports: 8080, 8000, 22`
+
+
 ---
 ## Issues
 

@@ -9,7 +9,7 @@ The purpose of this deployment is to deploy a Banking Flask application to EC2 i
 
 # Issues
 
-
+* There was an error within the requirements.txt file [Error][https://github.com/z0sun/deployment5.1/blob/main/Pip%20install%20error.png]
 
 
 

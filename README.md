@@ -13,7 +13,7 @@ This deployment aims to deploy a Banking Flask application to EC2 instances usin
 * 1 VPC
 * 2 AZ's
 * 2 Public Subnets
-* 3 EC2s (The application instances should be in their own subnet)
+* 3 EC2s (The application instances should be in their subnet)
 * 1 Route Table
 * Security Group Ports: 8080, 8000, 22
 
@@ -36,7 +36,7 @@ git switch main
 git merge second
 git push`
 
-During this step edits to the Jenkins file were split between two branches and in order for the Jenkins agents to work in the next step `awsDeploy` and `awsDeploy2` tags were used in the Jenkins agents configuration. The repo was split into a [Main][https://github.com/z0sun/deployment5.1/blob/second/Main%20Branch.png] and a [Second][https://github.com/z0sun/deployment5.1/blob/second/Second%20Branch.png] branch. 
+During this step edits to the Jenkins file were split between two branches and for the Jenkins agents to work in the next step `awsDeploy` and `awsDeploy2` tags were used in the Jenkins agents configuration. The repo was split into a [Main][https://github.com/z0sun/deployment5.1/blob/second/Main%20Branch.png] and a [Second][https://github.com/z0sun/deployment5.1/blob/second/Second%20Branch.png] branch. 
 
 6. In this build two Jenkins agents were utilized on each instance the application was deployed on. Here are the steps to create your nodes:
 `    Select "Build Executor Status"
@@ -63,9 +63,25 @@ During this step edits to the Jenkins file were split between two branches and i
 Both Applications deployed on both instances successfully. [Jenkins Builds][https://github.com/z0sun/deployment5.1/blob/main/Successful%20Main.png, https://github.com/z0sun/deployment5.1/blob/main/Second%20Build%20Success%20.png]
 
 [Applications][https://github.com/z0sun/deployment5.1/blob/main/Application1.png, https://github.com/z0sun/deployment5.1/blob/main/Application2.png]
+---
 
-
+## Diagram
+[Diagram][https://github.com/z0sun/deployment5.1/blob/main/Deploy5.1.drawio.png]
 ---
 ## Issues
 
-* There was an error within the requirements.txt file, `sudo apt update` and `sudo apt upgrade` resolved those issues. [Error][https://github.com/z0sun/deployment5.1/blob/main/Pip%20install%20error.png] 
+* There was an error within the requirements.txt file, `sudo apt update` and `sudo apt upgrade` resolved those issues. [Error][https://github.com/z0sun/deployment5.1/blob/main/Pip%20install%20error.png]
+---
+## Optimization 
+
+>More Availability to Users:
+
+To make the application more available, consider adding more instances across multiple regions and implementing a load balancer to distribute incoming traffic across these instances. An autoscaling group can also be beneficial to handle spikes in traffic.
+
+>Purpose of a Jenkins Agent:
+
+A Jenkins agent is a computational resource with a specific OS that Jenkins can use to execute parts of its jobs. This means you can distribute the workload across multiple machines, catering to different system requirements or ensuring more efficient builds by spreading the load.
+
+>Why This Specific Infrastructure:
+
+The infrastructure was designed with modularity and scaling in mind. By having separate subnets and instances for different parts of the application, we ensure security and isolation. The use of 2 AZs provides resilience against potential outages. Using clear names helps us easily identify and manage items. Jenkins automates tasks, making updates faster and reducing mistakes.

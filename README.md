@@ -62,6 +62,8 @@ During this step edits to the Jenkins file were split between two branches and i
 
 Both Applications deployed on both instances successfully. [Jenkins Builds][https://github.com/z0sun/deployment5.1/blob/main/Successful%20Main.png, https://github.com/z0sun/deployment5.1/blob/main/Second%20Build%20Success%20.png]
 
+[Applications][https://github.com/z0sun/deployment5.1/blob/main/Application1.png, https://github.com/z0sun/deployment5.1/blob/main/Application2.png]
+
 
 ---
 ## Issues

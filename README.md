@@ -1,8 +1,7 @@
-<p align="center">
-<img src="https://github.com/kura-labs-org/kuralabs_deployment_1/blob/main/Kuralogo.png">
-</p>
-<h1 align="center">C4_deployment-5.1<h1> 
+# Deployment 5.1
+### By Joseph White
 
+--------
 Demonstrate your ability to deploy a Banking Flask application to EC2 instances using a Jenkins agent.
 
 - Create a separate GitHub repository for this application 

@@ -10,3 +10,6 @@ The purpose of this deployment is to deploy a Banking Flask application to EC2 i
 # Issues
 
 
+
+
+
